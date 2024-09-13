@@ -12,7 +12,7 @@ const Body = () => {
       <section className='w-[90%]  sm:w-[70%] mx-auto  my-4'>
       <h1 className='text-2xl sm:text-4xl  text-center font-bold '>Heritage of Kolkata</h1>
 
-        <p className='text-2xl italic text-yellow-500 my-5 p-2 '>
+        <p className='text-xl italic text-yellow-500 my-5 p-2 '>
           {intro}
         </p>
       </section>
