@@ -23,12 +23,12 @@ const Header = () => {
         setIsOpen(false)
     }
     return (
-        <header className="sticky top-0 h-[100px] text-white flex items-center justify-between p-4 ">
+        <header className="backdrop sticky top-0 h-[100px] text-orange-400 flex items-center justify-between p-4 ">
             <div className=" ">
-                <img className="w-[100px] h-[100px] rounded-full" src={logo} alt="logo" />
+                <img className="w-[80px] h-[80px] rounded-full" src={logo} alt="logo" />
             </div>
-            <nav ref={navref} className="max-sm:bg-slate-800 text-xl font-bold mx-4 max-sm:w-[90%] max-sm:absolute top-[120px] left-[-90%] max-sm:flex max-sm:flex-col max-sm:items-center
-            max-sm:m-0 max-sm:h-[300px] max-sm:justify-center max-sm:opacity-[0.8]">
+            <nav ref={navref} className="max-sm:bg-slate-800 text-xl font-bold mx-4 max-sm:w-[90%] max-sm:absolute top-[100px] left-[-90%] max-sm:flex max-sm:flex-col max-sm:items-center
+            max-sm:m-0 max-sm:h-[300px] max-sm:justify-center max-sm:opacity-[0.9]">
                 <Link to="" className="mx-2  link">Heritages</Link>
                 <Link to="" className="mx-2 link max-sm:my-3">Contact Us</Link>
                 <Link to="" className="mx-2 link max-sm:my-3">Gallery</Link>

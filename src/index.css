@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 body{
-  background: rgb(39, 68, 68);
+  
+  background-color: black;
+  
+}
+.backdrop{
+  backdrop-filter: blur(10px);
 }
 .link {
     position: relative;
