@@ -10,4 +10,4 @@ const Facts = ({title,image,about}) => {
   )
 }
 
-export default Facts
+export default React.memo(Facts)

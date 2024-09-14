@@ -21,7 +21,7 @@ const ImageSlider = () => {
     return (
         <div>
             <section className='img-slider '>
-                <img loading='lazy' src={images[currentIndex]} alt={images[currentIndex]} className='w-[90%] mx-auto rounded-md sm:w-[50%] border-8 border-slate-600 ' />
+                <img loading='lazy' src={images[currentIndex]} alt={images[currentIndex]} className='w-[90%] mx-auto rounded-md sm:w-[70%] border-8 border-slate-600 ' />
             </section>
         </div>
     )

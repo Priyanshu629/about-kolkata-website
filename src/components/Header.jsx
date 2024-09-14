@@ -52,7 +52,7 @@ const Header = () => {
             </header>
             <div onMouseLeave={() => {
                 listmenu.current.style.display = "none"
-            }} ref={listmenu} className="absolute rounded-md right-[200px] top-[70px]  w-[150px] h-[200px] bg-slate-500  text-white hidden flex-col justify-center items-center">
+            }} ref={listmenu} className="absolute rounded-md right-[200px] top-[70px]  w-[150px] h-[200px] bg-slate-500  text-white hidden flex-col justify-center items-center ">
                 <a href="" className="text-yellow-100 font-bold link">Places-To-Visit</a>
                 <a href="" className="my-4 text-yellow-100 font-bold link">Famous-Food</a>
             </div>

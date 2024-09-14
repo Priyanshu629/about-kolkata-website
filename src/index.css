@@ -35,7 +35,7 @@ body{
   transition: transform 1s ease-in-out;
 }
 .intro{
-  box-shadow:  6px 5px 3px;
+  box-shadow:  5px 4px 3px;
 }
 .intro p{
   background: linear-gradient(to bottom right ,orange,yellow,green);
