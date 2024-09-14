@@ -2,20 +2,34 @@
 import Facts from './Facts'
 import ImageSlider from './ImageSlider'
 import { facts, intro } from '../utils/data'
+import { motion } from 'framer-motion'
 
 const Body = () => {
+
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+  };
+  
 
   return (
     <main className='text-white '>
 
 
-      <section className='w-[90%] intro sm:w-[70%] mx-auto  my-4 rounded-md border-2 border-gray-100  '>
+      <motion.section
+
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 2,ease:"easeInOut" }}
+
+      className='w-[90%] intro sm:w-[70%] mx-auto  my-4 rounded-md border-2 border-gray-100  '>
         <h1 className='text-2xl sm:text-4xl  text-center font-bold mt-4 '>Heritage of Kolkata</h1>
 
         <p className='text-xl font-semibold italic  my-5 p-3 '>
           {intro}
         </p>
-      </section>
+      </motion.section>
       <ImageSlider />
       <section className='w-[90%]  mx-auto '>
         <h2 className='text-3xl sm:text-3xl mt-6 text-center font-bold text-green-400 italic'>Some Interesting Facts</h2>
