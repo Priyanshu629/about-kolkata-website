@@ -33,15 +33,20 @@ const Header = () => {
                 </div>
                 <nav ref={navref} className="max-sm:bg-slate-800 text-xl font-bold mx-4 max-sm:w-[100%] max-sm:absolute top-[100px] left-[-100%] max-sm:flex max-sm:flex-col max-sm:items-center
             max-sm:m-0 max-sm:h-[300px] max-sm:justify-center max-sm:opacity-[0.9]">
+                   
+                   <select  id="" className="max-sm:hidden bg-black cursor-pointer hover:bg-gray-700 border-2 p-2 rounded-md ">
+                    
+                    <option value="#" selected disabled>Explore</option>
+                    <option value="#"  >
+                       <Link className="p-2">Places-To-Visit</Link> 
+                    </option>
+                    <option value="#"  >
+                        <Link className="p-2">Famous-Food</Link> 
+                    </option>
+                    </select>
 
-
-                    <Link to="" className="mx-2 max-sm:hidden link rounded-md   text-white" onMouseOver={() => {
-                        listmenu.current.style.display = "flex"
-                    }}>
-                        Explore ⬇️
-                    </Link>
-                    <Link to="" className="link sm:hidden rounded-md px-2" >Places-To-Visit</Link>
-                    <Link to="" className="link max-sm:my-3 sm:hidden rounded-md px-2">Famous-Food</Link>
+                    <Link to="" className="link sm:hidden  px-2" >Places-To-Visit</Link>
+                    <Link to="" className="link max-sm:my-3 sm:hidden  px-2">Famous-Food</Link>
                     <Link to="" className="mx-2 link max-sm:my-3 rounded-md px-2">Contact Us</Link>
                     <Link to="" className="mx-2 link max-sm:my-3 rounded-md px-2">Gallery</Link>
                 </nav>
@@ -50,12 +55,7 @@ const Header = () => {
                     <span onClick={toggle} className="sm:hidden text-4xl font-bold">&#9776;</span>
                 }
             </header>
-            <div onMouseLeave={() => {
-                listmenu.current.style.display = "none"
-            }} ref={listmenu} className="absolute rounded-md right-[200px] top-[70px]  w-[150px] h-[200px] bg-slate-500  text-white hidden flex-col justify-center items-center ">
-                <a href="" className="text-yellow-100 font-bold link">Places-To-Visit</a>
-                <a href="" className="my-4 text-yellow-100 font-bold link">Famous-Food</a>
-            </div>
+            
         </>
     )
 }
