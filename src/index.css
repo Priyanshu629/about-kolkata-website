@@ -37,7 +37,7 @@ body{
 .intro{
   box-shadow:  5px 4px 3px;
 }
-.intro p{
+.intro p,.welcome{
   background: linear-gradient(to bottom right ,orange,yellow,green);
   background-clip: text;
   -webkit-background-clip: text; /* For Safari/Chrome */

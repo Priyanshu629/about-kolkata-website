@@ -3,7 +3,7 @@ export const images = [
   "https://static.toiimg.com/thumb/width-600,height-400,msid-24599866.cms",
   "https://static.toiimg.com/thumb/width-600,height-400,msid-98268106.cms",
 ];
-export const intro = `Heritage of Kolkata is dedicated to celebrating and preserving the rich cultural, architectural, and historical legacy of the "City of Joy" Kolkata, once the capital of British India, is home to a unique blend of colonial architecture, grand palaces, traditional Bengali art, and literary treasures.Through engaging content, heritage tours, and educational resources, we aim to revive Kolkata’s past, connecting both locals and visitors to its storied legacy.
+export const intro = `We are dedicated to present  the rich cultural, architectural, and historical legacy of the "City of Joy" Kolkata, is home to a unique blend of colonial architecture, grand palaces, traditional Bengali art, and literary treasures.Through engaging content, heritage tours, and educational resources, we aim to revive Kolkata’s past, connecting both locals and visitors to its storied legacy.
 `;
 
 export const facts = [
