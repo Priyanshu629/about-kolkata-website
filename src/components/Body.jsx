@@ -16,14 +16,14 @@ const Body = () => {
     <main className='text-white '>
 
 
-      <h1 className='text-4xl welcome   mx-auto p-4 rounded-lg  text-center font-bold mt-4 '>Welcome to <br />Heritage of Kolkata</h1>
+      <h1 className='text-4xl welcome sm:text-6xl  mx-auto p-4 rounded-lg  text-center font-bold mt-[8%] mb-[10%] max-sm:mt-[15%]'>Welcome to <br />Heritage of Kolkata</h1>
 
       <motion.section
 
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 1, ease: "easeInOut" }}
+        transition={{ duration: 2, ease: "easeInOut" }}
 
         className='mb-[5%] w-[90%] intro sm:w-[70%] mx-auto  my-4 rounded-md border-2 border-gray-100  '>
 
