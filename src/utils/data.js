@@ -11,7 +11,7 @@ export const facts = [
     title: "Howara Station",
     image:
       "https://www.educationworld.in/wp-content/uploads/2019/02/HowrahRailwayStation.jpg",
-    about: "India's busiest railway station is the Howara station",
+    about: "India's busiest railway station is the Howara station situated in Kolkata.",
   },
 
   {
