@@ -23,7 +23,7 @@ const Body = () => {
       animate="visible"
       transition={{ duration: 2,ease:"easeInOut" }}
 
-      className='w-[90%] intro sm:w-[70%] mx-auto  my-4 rounded-md border-2 border-gray-100  '>
+      className='mb-[5%] w-[90%] intro sm:w-[70%] mx-auto  my-4 rounded-md border-2 border-gray-100  '>
         <h1 className='text-2xl sm:text-4xl  text-center font-bold mt-4 '>Heritage of Kolkata</h1>
 
         <p className='text-xl font-semibold italic  my-5 p-3 '>

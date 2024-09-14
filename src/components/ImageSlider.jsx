@@ -20,7 +20,7 @@ const ImageSlider = () => {
     
     return (
         <div>
-            <section className='img-slider mt-4'>
+            <section className='img-slider '>
                 <img loading='lazy' src={images[currentIndex]} alt={images[currentIndex]} className='w-[90%] mx-auto rounded-md sm:w-[50%] border-8 border-slate-600 ' />
             </section>
         </div>
