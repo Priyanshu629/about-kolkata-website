@@ -1,13 +1,13 @@
-import belurmath from "../Images/Belur Math.jpeg";
-import fortwilliam from "../Images/fort William.jpeg";
-import howaraBridge from "../Images/howara bridge.jpeg";
-import indianMuseum from "../Images/Indian museum.jpeg";
-import marblePalace from "../Images/marble palace.jpeg";
-import rajBhawan from "../Images/raj bhavan.jpeg";
-import shaheedMinar from "../Images/shaheed minar.jpeg";
-import townHall from "../Images/town hall.jpeg";
-import victoriaMemorial from "../Images/Victoria memorial.jpeg";
-import writerBuilding from "../Images/writer's building.jpeg";
+import belurmath from "../Images/BelurMath.jpeg";
+import fortwilliam from "../Images/fortWilliam.jpeg";
+import howaraBridge from "../Images/howaraBridge.jpeg";
+import indianMuseum from "../Images/IndianMuseum.jpeg";
+import marblePalace from "../Images/marblePalace.jpeg";
+import rajBhawan from "../Images/rajBhavan.jpeg";
+import shaheedMinar from "../Images/shaheedMinar.jpeg";
+import townHall from "../Images/townHall.jpeg";
+import victoriaMemorial from "../Images/victoriaMemorial.jpeg";
+import writerBuilding from "../Images/writer'sBuilding.jpeg";
 
 export const images = [
   {
