@@ -43,7 +43,7 @@ const Header = () => {
 
                     <Link onClick={close} to="/contact-us" className={` link max-sm:my-3 rounded-md px-2 ${currentLoc.pathname == "/contact-us" && "bg-green-600"}`}>Contact Us</Link>
 
-                    <Link onClick={close} to="" className={` link max-sm:my-3 rounded-md px-2 ${currentLoc.pathname == "/gallery" && "bg-green-600"}`}>Gallery</Link>
+                    
                 </nav>
 
                 {isOpen ? <span onClick={close} className="sm:hidden text-4xl font-bold">&times;</span> :

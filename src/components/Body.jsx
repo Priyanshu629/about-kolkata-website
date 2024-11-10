@@ -48,9 +48,7 @@ const Body = () => {
       <iframe title='Kolkata-Map' className='w-[80%] min-h-[500px]  mx-auto my-4 rounded-lg border-2  border-purple-500' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1890947.5146091871!2d87.93845096913218!3d22.230330883774023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1726227465744!5m2!1sen!2sin" loading="lazy" />
 
 
-      <footer className='mt-4 '>
-        <p className='text-center p-4 font-bold'>Made With ❣️ by Priyanshu Mishra</p>
-      </footer>
+      
 
     </main>
   )

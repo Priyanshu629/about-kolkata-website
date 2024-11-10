@@ -11,7 +11,8 @@ export const facts = [
     title: "Howara Station",
     image:
       "https://www.educationworld.in/wp-content/uploads/2019/02/HowrahRailwayStation.jpg",
-    about: "India's busiest railway station is the Howara station situated in Kolkata.",
+    about:
+      "India's busiest railway station is the Howara station situated in Kolkata.",
   },
 
   {
@@ -48,4 +49,54 @@ export const facts = [
     about:
       "Kolkata is famous for its grand celebrations of Durga Puja, a major Hindu festival. The city transforms into a vibrant carnival with elaborate decorations, traditional performances, and community feasts.",
   },
+];
+
+export const foods = [
+  {
+    title: "Shorshe Bata Aloo (Mustard Paste Potato)",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzb9u8BHxcVbb02So0KTIdWFrYtJA__aLk2g&s",
+    description:
+      "Potatoes cooked in a rich, flavorful mustard paste with green chilies and a hint of turmeric, served with rice or roti. A traditional Bengali vegetarian dish.",
+    price: "₹150–₹250 per serving.",
+    type: "veg",
+  },
+  {
+    title: "Aloo Posto (Potatoes in Poppy Seed Paste)",
+    image:
+      "https://www.vegrecipesofindia.com/wp-content/uploads/2016/10/aloo-posto-recipe-1a.jpg",
+    description:
+      "A classic Bengali dish made with potatoes cooked in a flavorful poppy seed paste",
+    price: " ₹120–₹200 per serving.",
+    type: "veg",
+  },
+  {
+    title: "Cholar Dal (Bengal Gram Lentils)",
+    image:
+      "https://holycowvegan.net/wp-content/uploads/2014/06/bengali-cholar-dal-recipe-480x270.jpg",
+    description:
+      "A rich and flavorful dal made from Bengal gram (chana dal), tempered with ghee, and spiced with cinnamon, cloves, and cardamom. Often served with luchi (fried bread) or rice.",
+    price: "₹150–₹250 per serving",
+    type: "veg",
+  },
+  {
+    title: "Phuchka (Pani Puri)",
+    image:
+      "https://i.pinimg.com/550x/f4/db/c2/f4dbc2f84efeafc8294402630802a920.jpg",
+    description:
+      "The Bengali version of Pani Puri, Phuchka is made of crispy puris filled with spicy tamarind water, chickpea stuffing, and potatoes. It's a popular snack sold at roadside stalls.",
+    price: " ₹30–₹70 for a plate of 6–8 pieces.",
+    type: "veg",
+  },
+  {
+    title: "Rasgulla",
+    image:
+      "https://cdn1.foodviva.com/static-content/food-images/desserts-sweets-recipes/rasgulla/rasgulla.jpg",
+    description:
+      "The iconic Bengali sweet made from soft and spongy chhena (cottage cheese) balls soaked in sugar syrup. It’s light, refreshing, and an absolute must-try.",
+    price: "₹20–₹60 per piece.",
+    type: "veg",
+  },
+
+
 ];
