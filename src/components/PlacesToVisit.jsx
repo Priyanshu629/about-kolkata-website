@@ -1,5 +1,5 @@
 import React from "react";
-import { images } from "../Images"; // Make sure the path is correct
+import { images } from "../Images/index.js"; // Make sure the path is correct
 
 const PlacesToVisit = () => {
   return (
