@@ -9,15 +9,45 @@ import townHall from "../Images/town hall.jpeg";
 import victoriaMemorial from "../Images/Victoria memorial.jpeg";
 import writerBuilding from "../Images/writer's building.jpeg";
 
-export const images =[{
-  belurmath,
-  fortwilliam,
-  howaraBridge,
-  indianMuseum,
-  marblePalace,
-  rajBhawan,
-  shaheedMinar,
-  townHall,
-  victoriaMemorial,
-  writerBuilding,
-}];
+export const images = [
+  {
+    name: "Belur Math",
+    image: belurmath,
+  },
+  {
+    name: "Fort William",
+    image: fortwilliam,
+  },
+  {
+    name: "Howrah Bridge",
+    image: howaraBridge,
+  },
+  {
+    name: "Indian Museum",
+    image: indianMuseum,
+  },
+  {
+    name: "Marble Palace",
+    image: marblePalace,
+  },
+  {
+    name: "Raj Bhawan",
+    image: rajBhawan,
+  },
+  {
+    name: "Shaheed Minar",
+    image: shaheedMinar,
+  },
+  {
+    name: "Town Hall",
+    image: townHall,
+  },
+  {
+    name: "Victoria Memorial",
+    image: victoriaMemorial,
+  },
+  {
+    name: "Writer's Building",
+    image: writerBuilding,
+  }
+];
