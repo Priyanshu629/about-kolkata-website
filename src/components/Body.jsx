@@ -23,7 +23,7 @@ const Body = () => {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 2, ease: "easeInOut" }}
+        transition={{ duration: 1, ease: "easeInOut" }}
 
         className='mb-[5%] w-[90%] intro sm:w-[70%] mx-auto  my-4 rounded-md border-2 border-gray-100  '>
 
