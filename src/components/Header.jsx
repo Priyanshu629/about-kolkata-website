@@ -1,58 +1,68 @@
-import { useEffect, useRef, useState } from "react"
-import logo from "../Images/logo.jpeg"
-import { Link, useLocation } from "react-router-dom"
+import { useEffect, useRef, useState } from "react";
+import logo from "../Images/logo.jpeg";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const navref = useRef(null)
-    const currentLoc = useLocation()
-
+    const [isOpen, setIsOpen] = useState(false);
+    const navRef = useRef(null);
+    const currentLoc = useLocation();
 
     useEffect(() => {
+        if (navRef.current) {
+            navRef.current.style.transition = "left 0.5s ease-in-out";
+        }
+    }, []);
 
-        navref.current.style.transition = "left .5s ease-in-out"
-    }, [])
+    const toggleMenu = () => {
+        setIsOpen((prevState) => !prevState);
+    };
 
-    const toggle = () => {
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
 
-
-        navref.current.style.left = "0"
-        setIsOpen(true)
-
-    }
-    const close = () => {
-        navref.current.style.left = "-100%"
-        setIsOpen(false)
-    }
-
+    const navLinks = [
+        { to: "/", label: "Home" },
+        { to: "/places-to-visit", label: "Places" },
+        { to: "/famous-food", label: "Food" },
+        { to: "/contact-us", label: "Contact Us" },
+    ];
 
     return (
-        <>
-            <header className="backdrop sticky top-0 h-[100px]  flex items-center justify-between p-4 w-[100%] max-sm:text-white">
-                <div className=" ">
-                    <img className="w-[80px] h-[80px] rounded-full" src={logo} alt="logo" />
-                </div>
-                <nav ref={navref} className="max-sm:bg-slate-800 text-lg font-bold items-center  max-sm:absolute top-[100px] left-[-100%] max-sm:flex max-sm:flex-col max-sm:items-center bg-gray-300 p-2 sm:rounded-md
-            max-sm:m-0 max-sm:h-[300px] max-sm:justify-center max-sm:opacity-[0.9] max-sm:w-full ">
+        <header className="sticky top-0 h-[100px] flex items-center justify-between p-4 w-full bg-gray-900 text-white shadow-md z-10">
+            <div>
+                <img className="w-[80px] h-[80px] rounded-full" src={logo} alt="logo" />
+            </div>
+            <nav
+                ref={navRef}
+                className={`max-sm:bg-slate-800 max-sm:text-white text-lg font-bold items-center sm:static sm:flex sm:flex-row max-sm:absolute max-sm:top-[100px] max-sm:flex-col max-sm:items-center bg-gray-300 p-2 sm:rounded-md max-sm:w-full max-sm:h-[300px] max-sm:justify-center max-sm:transition-all ${
+                    isOpen ? "max-sm:left-0" : "max-sm:left-[-100%]"
+                }`}
+            >
+                {navLinks.map((link) => (
+                    <Link
+                        key={link.to}
+                        onClick={closeMenu}
+                        to={link.to}
+                        className={`link rounded-md mx-2 px-2 max-sm:my-3 ${
+                            currentLoc.pathname === link.to ? "bg-green-600" : ""
+                        }`}
+                    >
+                        {link.label}
+                    </Link>
+                ))}
+            </nav>
 
-                    <Link onClick={close} to="/" className={`link rounded-md mx-2 max-sm:my-3   px-2 ${currentLoc.pathname == "/" && "bg-green-600"}`} >Home</Link>
+            <button
+                onClick={toggleMenu}
+                aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-expanded={isOpen}
+                className="sm:hidden text-4xl font-bold focus:outline-none"
+            >
+                {isOpen ? "×" : "☰"}
+            </button>
+        </header>
+    );
+};
 
-                    <Link onClick={close} to="/places-to-visit" className={`link rounded-md mx-2 max-sm:my-3   px-2 ${currentLoc.pathname == "/places-to-visit" && "bg-green-600"}`} >Places</Link>
-
-                    <Link onClick={close} to="/famous-food" className={`link max-sm:my-3 rounded-md    px-2 ${currentLoc.pathname == "/famous-food" && "bg-green-600"}`}>Food</Link>
-
-                    <Link onClick={close} to="/contact-us" className={` link max-sm:my-3 rounded-md px-2 ${currentLoc.pathname == "/contact-us" && "bg-green-600"}`}>Contact Us</Link>
-
-                    
-                </nav>
-
-                {isOpen ? <span onClick={close} className="sm:hidden text-4xl font-bold">&times;</span> :
-                    <span onClick={toggle} className="sm:hidden text-4xl font-bold">&#9776;</span>
-                }
-            </header>
-
-        </>
-    )
-}
-
-export default Header
+export default Header;
